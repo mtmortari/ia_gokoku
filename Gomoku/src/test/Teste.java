@@ -22,6 +22,7 @@ public class Teste {
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 7, 8);
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 7, 9);
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 7, 10);
+		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 7, 11);
 		
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 8, 6);
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 8, 7);
@@ -38,31 +39,33 @@ public class Teste {
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 10, 10);
 		
 		
+		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 11, 3);
+		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 11, 7);
+		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 11, 11);
+		
 		
 		
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 14, 0);
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 14, 14);
 		
-		
-		
-		
-//		tab.colocaPecaDoJogadorNoTabuleirio(player2.getValorPeca(), 7, 6);
-//		tab.colocaPecaDoJogadorNoTabuleirio(player2.getValorPeca(), 6, 6);
 	
 		GUI.showTabuleiro(tab);
 		
-		Integer simples1 = FuncaoUtilidade.calculaValorSequenciaSimples(tab, player.getValorPeca());
+		Long simples1 = FuncaoUtilidade.calculaValorSequenciaSimples(tab, player.getValorPeca());
 		System.out.println("simples player 1 " + simples1);
 		
 		
-		Integer dupla1 = FuncaoUtilidade.calculaValorSequenciaDupla(tab, player.getValorPeca());
+		Long dupla1 = FuncaoUtilidade.calculaValorSequenciaDupla(tab, player.getValorPeca());
 		System.out.println("dupla player 1 " + dupla1);
 		
-		Integer tripla1 = FuncaoUtilidade.calculaValorSequenciaTripla(tab, player.getValorPeca());
+		Long tripla1 = FuncaoUtilidade.calculaValorSequenciaTripla(tab, player.getValorPeca());
 		System.out.println("tripla player 1 " + tripla1);
 		
-		Integer quadrupla1 = FuncaoUtilidade.calculaValorSequenciaQuadrupla(tab, player.getValorPeca());
+		Long quadrupla1 = FuncaoUtilidade.calculaValorSequenciaQuadrupla(tab, player.getValorPeca());
 		System.out.println("quadrupla player 1 " + quadrupla1);
+		
+		Long quintupla1 = FuncaoUtilidade.calculaValorSequenciaQuintupla(tab, player.getValorPeca());
+		System.out.println("quintupla player 1 " + quintupla1);
 		
 		
 	}
