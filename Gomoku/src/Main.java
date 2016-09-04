@@ -13,10 +13,10 @@ public class Main {
 		
 		
 		GUI.showTabuleiro(tab);
-		int row = GUI.showPlayerTurn(player);
+		int row = GUI.showPlayerTurn(player.getName());
 		int column = GUI.getColumnTurn();
 		
-		String msg = tab.colocaPecaDoJogadorNoTabuleirio(player, row, column);
+		String msg = tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), row, column);
 		
 		GUI.showTabuleiro(tab);
 		

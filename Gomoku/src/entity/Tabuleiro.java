@@ -12,11 +12,11 @@ public class Tabuleiro {
 		return size;
 	}
 
-	public String colocaPecaDoJogadorNoTabuleirio(Player player, int row, int column){
+	public String colocaPecaDoJogadorNoTabuleirio(String valorPeca, int row, int column){
 		if(row > size && column > size){
 			return "Erro: linha ou coluna não existe";
 		}		
-		this.estado[row][column] = player.getValorPeca();
+		this.estado[row][column] = valorPeca;
 		return null;
 	}
 	

@@ -31,8 +31,8 @@ public class GUI {
 		}
 	}
 	
-	static public int showPlayerTurn(Player player){
-		System.out.println("É a vez do jogador " + player.getName());
+	static public int showPlayerTurn(String playerName){
+		System.out.println("É a vez do jogador " + playerName);
 		System.out.println("por favor selecione a linha onde você vai querer jogar:");
 	
 		Scanner in = new Scanner(System.in);
