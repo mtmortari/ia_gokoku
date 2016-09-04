@@ -16,4 +16,54 @@ public class FuncaoUtilidade {
 		}		
 	return sum;	
 	}
+	
+	
+	public static Integer calculaValorSequenciaDupla(Tabuleiro tab, String pecaJogador){
+		Integer size = tab.getSize();
+		Integer sum = 0;
+		Integer valorDupla = 10;
+		int aux1, aux2;  //prra controle de index out of bounds e ajuda a buscar o vizinho da peça
+		for(int i = 0; i < size; i++){			
+			for(int j = 0; j < size; j++){
+				if(tab.getEstado()[i][j].equals(pecaJogador)){					
+					//peça vizinha ao lado direito
+					// XX				
+					aux1 = i;
+					aux2 = j + 1;
+					if(aux1 < size && tab.getEstado()[aux1][aux2].equals(pecaJogador)){
+						sum += valorDupla;
+					}
+					
+					//peça vizinha a diagonal para esquerda a baixo
+					//  X
+					// X
+					aux1 = i + 1;
+					aux2 = j - 1;
+					if(aux1 > 0 && aux2 < size && tab.getEstado()[aux1][aux2].equals(pecaJogador)){
+						sum += valorDupla;
+					}
+					
+					//peça vizinha direto abaixo
+					//  X
+					//  X
+					aux1 = i + 1;
+					aux2 = j;
+					if(aux1 > 0 && aux2 < size && tab.getEstado()[aux1][aux2].equals(pecaJogador)){
+						sum += valorDupla;
+					}
+					
+					//peça vizinha  a diagonal a direita abaixo
+					//  X
+					//   X
+					aux1 = i + 1;
+					aux2 = j + 1;
+					if(aux1 < size && aux2 < size && tab.getEstado()[aux1][aux2].equals(pecaJogador)){
+						sum += valorDupla;
+					}	
+						
+				}				
+			}			
+		}		
+	return sum;	
+	}
 }
