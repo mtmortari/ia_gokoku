@@ -23,6 +23,13 @@ public class Teste {
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 8, 6);
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 8, 8);
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 7, 8);
+		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 9, 5);
+		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 9, 7);
+		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 9, 9);
+		
+		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 14, 0);
+		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 14, 14);
+		
 		
 		
 		
@@ -32,13 +39,14 @@ public class Teste {
 		GUI.showTabuleiro(tab);
 		
 		Integer simples1 = FuncaoUtilidade.calculaValorSequenciaSimples(tab, player.getValorPeca());
-		Integer simples2 = FuncaoUtilidade.calculaValorSequenciaSimples(tab, player2.getValorPeca());
-		
 		System.out.println("simples player 1 " + simples1);
-		System.out.println("simples player 2 " + simples2);
+		
 		
 		Integer dupla1 = FuncaoUtilidade.calculaValorSequenciaDupla(tab, player.getValorPeca());
 		System.out.println("dupla player 1 " + dupla1);
+		
+		Integer tripla1 = FuncaoUtilidade.calculaValorSequenciaTripla(tab, player.getValorPeca());
+		System.out.println("tripla player 1 " + tripla1);
 		
 		
 	}
