@@ -11,12 +11,9 @@ public class FuncaoUtilidade {
 			for(int j = 0; j < size; j++){
 				if(tab.getEstado()[i][j].equals(pecaJogador)){
 					sum += 1;
-				}
-				
-			}
-			
-		}
-		
+				}				
+			}			
+		}		
 	return sum;	
 	}
 }
