@@ -19,13 +19,18 @@ public class Teste {
 	
 		
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 7, 7);
+		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 7, 8);
+		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 7, 9);
+		
+	//	tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 8, 4);
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 8, 7);		
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 8, 6);
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 8, 8);
-		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 7, 8);
+		
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 9, 5);
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 9, 7);
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 9, 9);
+		
 		
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 14, 0);
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 14, 14);
