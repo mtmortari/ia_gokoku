@@ -1,6 +1,7 @@
 package entity;
 
 import constants.Constants;
+import function.FuncaoUtilidade;
 
 public class Tabuleiro {
 	
@@ -37,6 +38,22 @@ public class Tabuleiro {
 
 	public void setEstado(String[][] estado) {
 		this.estado = estado;
+	}
+	
+	public boolean verificarVitoria(Tabuleiro t, Player p)
+	{
+		Long valor = 0L;
+		
+		valor = FuncaoUtilidade.calculaValorSequenciaQuintupla(t, p.getValorPeca());
+		if(valor > 0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
 	}
 	
 	

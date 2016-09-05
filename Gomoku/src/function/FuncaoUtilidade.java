@@ -232,7 +232,7 @@ public class FuncaoUtilidade {
 	public static Long calculaValorSequenciaQuintupla(Tabuleiro tab, String pecaJogador){
 		Integer size = tab.getSize();
 		Long sum = 0L;
-		Integer valorSequencia = 1000000000;
+		Integer valorSequencia = Integer.MAX_VALUE;
 		int aux1, aux2;  //para controle de index out of bounds e ajuda a buscar o vizinho da peça
 		for(int i = 0; i < size; i++){			
 			for(int j = 0; j < size; j++){
