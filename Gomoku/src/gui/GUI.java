@@ -2,7 +2,6 @@ package gui;
 
 import java.util.Scanner;
 
-import entity.Player;
 import entity.Tabuleiro;
 
 public class GUI {
