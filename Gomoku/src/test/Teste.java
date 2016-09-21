@@ -15,12 +15,7 @@ public class Teste {
 		tab.createEmptyTabuleiro();
 		Player player = new Player("mathias", Constants.PLAYER_O);
 		Player player2 = new Player("paulo", Constants.PLAYER_X);
-		
-		
-//		GUI.showTabuleiro(tab);
-		
-		
-//Virará uma função que acaba quando um ganha ------------------------
+	
 		int row, column;
 		boolean win = false;
 		
@@ -50,9 +45,17 @@ public class Teste {
 				break;
 			}			
 		}
-// --------------------------------------------------------------------
+	}
 		
-		/*tab.colocaPecaDoJogadorNoTabuleirio(player2.getValorPeca(), 7, 7);
+	public void teste2(){
+		Tabuleiro tab = new Tabuleiro();	
+		tab.createEmptyTabuleiro();
+		Player player = new Player("mathias", Constants.PLAYER_O);
+		
+		
+		GUI.showTabuleiro(tab);
+		
+		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 7, 7);
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 7, 8);
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 7, 9);
 		tab.colocaPecaDoJogadorNoTabuleirio(player.getValorPeca(), 7, 10);
@@ -86,22 +89,7 @@ public class Teste {
 	
 		GUI.showTabuleiro(tab);
 		
-		Long simples1 = FuncaoUtilidade.calculaValorSequenciaSimples(tab, player.getValorPeca());
-		System.out.println("simples player 1 " + simples1);
-		
-		
-		Long dupla1 = FuncaoUtilidade.calculaValorSequenciaDupla(tab, player.getValorPeca());
-		System.out.println("dupla player 1 " + dupla1);
-		
-		Long tripla1 = FuncaoUtilidade.calculaValorSequenciaTripla(tab, player.getValorPeca());
-		System.out.println("tripla player 1 " + tripla1);
-		
-		Long quadrupla1 = FuncaoUtilidade.calculaValorSequenciaQuadrupla(tab, player.getValorPeca());
-		System.out.println("quadrupla player 1 " + quadrupla1);
-		
-		Long quintupla1 = FuncaoUtilidade.calculaValorSequenciaQuintupla(tab, player.getValorPeca());
-		System.out.println("quintupla player 1 " + quintupla1);*/
-		
-		
+		Long seq = FuncaoUtilidade.calculaValorSequencia(tab, player.getValorPeca());
+		System.out.println("simples player 1 " + seq);
 	}
 }

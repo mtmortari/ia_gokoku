@@ -44,8 +44,8 @@ public class Tabuleiro {
 	{
 		Long valor = 0L;
 		
-		valor = FuncaoUtilidade.calculaValorSequenciaQuintupla(t, p.getValorPeca());
-		if(valor > 0)
+		valor = FuncaoUtilidade.calculaValorSequencia(t, p.getValorPeca());
+		if(valor > Integer.MAX_VALUE)
 		{
 			return true;
 		}
